@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+.wrapper-header {
+  width: 1522px;
+  height: 1014px;
+  padding: 8px 3px 1px 79px;
+  background: #E5E5E5;
+}
+.wrapper-header .header {
+  height: 1014px;
+  width: 1440px;
+  background-image: url("../../images/electr.jpg");
+  background-size: cover;
+  background-image: url("../../images/electr.jpg"), linear-gradient(180deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%);
+}
