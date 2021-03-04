@@ -9,12 +9,13 @@ html {
 }
 
 body {
+    padding: 0;
+    margin: 0;
     background: #E5E5E5;
 }
 
 .container {
-    margin: 8px 3px 1px 3px;
-    background: rgb(228, 129, 129);
+    padding: 10px;
 }
 
 .first-page {
@@ -22,7 +23,10 @@ body {
     height: 1014px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%), url('../../images/electr.jpg');
     background-size: cover;
-    header .phone-numbers {
+    header {
+        display: flex;
+    }
+    .phone-numbers-header {
         display: flex;
         height: 54px;
         background-color: hsla(0, 0%, 0%, .2);
@@ -39,6 +43,18 @@ body {
             font-weight: 500;
             font-size: 16px;
             text-align: center;
+            font-family: 'Gilroy';
+        }
+    }
+    .icons-header {
+        ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 22px 131px 0px 20px;
+        }
+        & li {
+            margin-left: 20px;
         }
     }
 }

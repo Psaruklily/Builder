@@ -9,12 +9,13 @@ html {
 }
 
 body {
+  padding: 0;
+  margin: 0;
   background: #E5E5E5;
 }
 
 .container {
-  margin: 8px 3px 1px 3px;
-  background: #e48181;
+  padding: 10px;
 }
 
 .first-page {
@@ -23,22 +24,35 @@ body {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%), url("../../images/electr.jpg");
   background-size: cover;
 }
-.first-page header .phone-numbers {
+.first-page header {
+  display: flex;
+}
+.first-page .phone-numbers-header {
   display: flex;
   height: 54px;
   background-color: rgba(0, 0, 0, 0.2);
 }
-.first-page header .phone-numbers div {
+.first-page .phone-numbers-header div {
   width: 139px;
   height: 38px;
   margin-right: 47px;
 }
-.first-page header .phone-numbers div:first-child {
+.first-page .phone-numbers-header div:first-child {
   margin-left: 818px;
 }
-.first-page header .phone-numbers p {
+.first-page .phone-numbers-header p {
   color: #fff;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
+  font-family: "Gilroy";
+}
+.first-page .icons-header ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 22px 131px 0px 20px;
+}
+.first-page .icons-header li {
+  margin-left: 20px;
 }
