@@ -12,16 +12,33 @@ body {
   background: #E5E5E5;
 }
 
-.wrapper-header {
-  width: 1522px;
-  height: 1014px;
-  padding: 8px 3px 1px 79px;
-  background: #E5E5E5;
+.container {
+  margin: 8px 3px 1px 3px;
+  background: #e48181;
 }
-.wrapper-header .header {
+
+.first-page {
+  width: 1443px;
   height: 1014px;
-  width: 1440px;
-  background-image: url("../../images/electr.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%), url("../../images/electr.jpg");
   background-size: cover;
-  background-image: url("../../images/electr.jpg"), linear-gradient(180deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.first-page header .phone-numbers {
+  display: flex;
+  height: 54px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.first-page header .phone-numbers div {
+  width: 139px;
+  height: 38px;
+  margin-right: 47px;
+}
+.first-page header .phone-numbers div:first-child {
+  margin-left: 818px;
+}
+.first-page header .phone-numbers p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
 }

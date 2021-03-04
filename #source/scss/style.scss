@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+.container {
+    margin: 8px 3px 1px 3px;
+    background: rgb(228, 129, 129);
+}
+
+.first-page {
+    width: 1443px;
+    height: 1014px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%), url('../../images/electr.jpg');
+    background-size: cover;
+    header .phone-numbers {
+        display: flex;
+        height: 54px;
+        background-color: hsla(0, 0%, 0%, .2);
+        div {
+            width: 139px;
+            height: 38px;
+            margin-right: 47px;
+            &:first-child {
+                margin-left: 818px;
+            }
+        }
+        p {
+            color: #fff;
+            font-weight: 500;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+}
