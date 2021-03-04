@@ -59,6 +59,9 @@ body {
 .first-page .icons-header li {
   margin-left: 20px;
 }
+.first-page .icons-header li:hover {
+  cursor: pointer;
+}
 .first-page header .wrapper-logo-nav-button {
   display: flex;
   padding: 0px 80px;

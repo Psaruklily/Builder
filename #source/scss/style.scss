@@ -56,8 +56,11 @@ body {
             padding: 0;
             margin: 22px 131px 0px 20px;
         }
-        & li {
+        li {
             margin-left: 20px;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
     header .wrapper-logo-nav-button {
