@@ -24,6 +24,9 @@ body {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%), url('../../images/electr.jpg');
     background-size: cover;
     header {
+        position: relative;
+    }
+    header .wrapper-phone-icons {
         display: flex;
     }
     .phone-numbers-header {
@@ -57,4 +60,58 @@ body {
             margin-left: 20px;
         }
     }
+    header .wrapper-logo-nav-button {
+        display: flex;
+        padding: 0px 80px;
+        .logo {
+            width: 73px;
+            height: 80px;
+            margin-right: 175px;
+            text-align: center;
+            span {
+                font-weight: 900;
+                font-size: 24px;
+                color: #FF9900;
+                line-height: 80px;
+            }
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            li {
+                display: block;
+                height: 80px;
+                margin-right: 20px;
+                padding: 27px 0px;
+                margin-right: 80px;
+            }
+            & a {
+                text-align: center;
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+        .call {
+            width: 143px;
+            height: 30px;
+            color: #FF9900;
+            border: 2px solid #FF9900;
+            text-align: center;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 5px;
+            position: absolute;
+            top: 78px;
+            right: 94px;
+        }
+    }
+}
+
+.active {
+    border-bottom: 2px solid #FF9900;
+    padding-bottom: 3px;
+    color: #FF9900;
 }

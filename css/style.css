@@ -25,6 +25,9 @@ body {
   background-size: cover;
 }
 .first-page header {
+  position: relative;
+}
+.first-page header .wrapper-phone-icons {
   display: flex;
 }
 .first-page .phone-numbers-header {
@@ -55,4 +58,58 @@ body {
 }
 .first-page .icons-header li {
   margin-left: 20px;
+}
+.first-page header .wrapper-logo-nav-button {
+  display: flex;
+  padding: 0px 80px;
+}
+.first-page header .wrapper-logo-nav-button .logo {
+  width: 73px;
+  height: 80px;
+  margin-right: 175px;
+  text-align: center;
+}
+.first-page header .wrapper-logo-nav-button .logo span {
+  font-weight: 900;
+  font-size: 24px;
+  color: #FF9900;
+  line-height: 80px;
+}
+.first-page header .wrapper-logo-nav-button ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+.first-page header .wrapper-logo-nav-button ul li {
+  display: block;
+  height: 80px;
+  margin-right: 20px;
+  padding: 27px 0px;
+  margin-right: 80px;
+}
+.first-page header .wrapper-logo-nav-button ul a {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+.first-page header .wrapper-logo-nav-button .call {
+  width: 143px;
+  height: 30px;
+  color: #FF9900;
+  border: 2px solid #FF9900;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 5px;
+  position: absolute;
+  top: 78px;
+  right: 94px;
+}
+
+.active {
+  border-bottom: 2px solid #FF9900;
+  padding-bottom: 3px;
+  color: #FF9900;
 }
