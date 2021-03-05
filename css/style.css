@@ -9,19 +9,110 @@ html {
 }
 
 body {
+  padding: 0;
+  margin: 0;
   background: #E5E5E5;
 }
 
-.wrapper-header {
-  width: 1522px;
-  height: 1014px;
-  padding: 8px 3px 1px 79px;
-  background: #E5E5E5;
+.container {
+  padding: 10px;
 }
-.wrapper-header .header {
+
+.first-page {
+  width: 1443px;
   height: 1014px;
-  width: 1440px;
-  background-image: url("../../images/electr.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%), url("../../images/electr.jpg");
   background-size: cover;
-  background-image: url("../../images/electr.jpg"), linear-gradient(180deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.first-page header {
+  position: relative;
+}
+.first-page header .wrapper-phone-icons {
+  display: flex;
+}
+.first-page .phone-numbers-header {
+  display: flex;
+  height: 54px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.first-page .phone-numbers-header div {
+  width: 139px;
+  height: 38px;
+  margin-right: 47px;
+}
+.first-page .phone-numbers-header div:first-child {
+  margin-left: 818px;
+}
+.first-page .phone-numbers-header p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Gilroy";
+}
+.first-page .icons-header ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 22px 131px 0px 20px;
+}
+.first-page .icons-header li {
+  margin-left: 20px;
+}
+.first-page .icons-header li:hover {
+  cursor: pointer;
+}
+.first-page header .wrapper-logo-nav-button {
+  display: flex;
+  padding: 0px 80px;
+}
+.first-page header .wrapper-logo-nav-button .logo {
+  width: 73px;
+  height: 80px;
+  margin-right: 175px;
+  text-align: center;
+}
+.first-page header .wrapper-logo-nav-button .logo span {
+  font-weight: 900;
+  font-size: 24px;
+  color: #FF9900;
+  line-height: 80px;
+}
+.first-page header .wrapper-logo-nav-button ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+.first-page header .wrapper-logo-nav-button ul li {
+  display: block;
+  height: 80px;
+  margin-right: 20px;
+  padding: 27px 0px;
+  margin-right: 80px;
+}
+.first-page header .wrapper-logo-nav-button ul a {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+.first-page header .wrapper-logo-nav-button .call {
+  width: 143px;
+  height: 30px;
+  color: #FF9900;
+  border: 2px solid #FF9900;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 5px;
+  position: absolute;
+  top: 78px;
+  right: 94px;
+}
+
+.active {
+  border-bottom: 2px solid #FF9900;
+  padding-bottom: 3px;
+  color: #FF9900;
 }
