@@ -16,11 +16,11 @@ body {
 
 .main-container {
   padding: 10px;
+  width: 1443px;
 }
 
 .first-page {
   position: relative;
-  width: 1443px;
   height: 1014px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%), url("../../images/electr.jpg");
   background-size: cover;
@@ -162,9 +162,6 @@ body {
   cursor: pointer;
   text-decoration: underline;
 }
-.first-page .additional-information:first-child {
-  margin-right: 0px;
-}
 
 .active {
   border-bottom: 2px solid #FF9900;
@@ -191,4 +188,83 @@ body {
 
 .leave-request {
   background: #FF9900;
+}
+
+/*Styles for page with slider*/
+.page-with-slider {
+  width: 100%;
+  height: 919px;
+  background: white;
+  background-image: url("../../images/plan.png");
+  background-size: 692px 606px;
+  background-repeat: no-repeat;
+  background-position: top 250px left 310px;
+  position: relative;
+}
+.page-with-slider .title-page-slider {
+  width: 307px;
+  background: #8bd4a7;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-with-slider .title-page-slider * {
+  margin: 0;
+  text-align: center;
+}
+.page-with-slider .title-page-slider :first-child {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.09px;
+  color: #FF9900;
+  letter-spacing: 3px;
+}
+.page-with-slider .title-page-slider :last-child {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 55.76px;
+}
+.page-with-slider .flex-container {
+  position: absolute;
+  top: 235px;
+  display: flex;
+  width: 100%;
+}
+.page-with-slider .flex-container .project-name {
+  width: 50%;
+  padding-left: 168px;
+}
+.page-with-slider .flex-container .project-name :nth-child(1) {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.46px;
+  margin: 0px 0px 16px;
+}
+.page-with-slider .flex-container .project-name :nth-child(2) {
+  width: 504px;
+  height: 145px;
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.09px;
+}
+.page-with-slider .flex-container .project-name :nth-child(3),
+.page-with-slider .flex-container .project-name :nth-child(4) {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.09px;
+  margin: 0px 0px 10px;
+}
+.page-with-slider .flex-container .slider {
+  background: #76c784;
+  width: 50%;
+}
+
+#span-descp {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.88px;
 }
