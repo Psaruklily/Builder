@@ -8,19 +8,30 @@ html {
     box-sizing: inherit;
 }
 
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font($size, $weight, $line-height) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+}
+
 body {
     padding: 0;
     margin: 0;
     background: #E5E5E5;
 }
 
-.container {
+.main-container {
     padding: 10px;
 }
 
 .first-page {
-    width: 1443px;
-    height: 1014px;
+    position: relative;
+    @include size(1443px, 1014px);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%), url('../../images/electr.jpg');
     background-size: cover;
     header {
@@ -34,8 +45,8 @@ body {
         height: 54px;
         background-color: hsla(0, 0%, 0%, .2);
         div {
-            width: 139px;
-            height: 38px;
+            @include size(139px,
+            38px);
             margin-right: 47px;
             &:first-child {
                 margin-left: 818px;
@@ -67,15 +78,15 @@ body {
         display: flex;
         padding: 0px 80px;
         .logo {
-            width: 73px;
-            height: 80px;
+            @include size(73px,
+            80px);
             margin-right: 175px;
             text-align: center;
             span {
-                font-weight: 900;
-                font-size: 24px;
+                @include font(24px,
+                900,
+                80px);
                 color: #FF9900;
-                line-height: 80px;
             }
         }
         ul {
@@ -94,21 +105,74 @@ body {
                 color: #fff;
                 text-decoration: none;
                 font-size: 18px;
-                color: #fff;
             }
         }
-        .call {
-            width: 143px;
-            height: 30px;
-            color: #FF9900;
-            border: 2px solid #FF9900;
-            text-align: center;
-            font-weight: 700;
-            font-size: 16px;
-            padding: 5px;
-            position: absolute;
-            top: 78px;
-            right: 94px;
+    }
+    .descriptionAboutPage {
+        color: #fff;
+        position: absolute;
+        left: 335px;
+        top: 279px;
+        .title {
+            @include size(860px,
+            112px);
+            padding-right: 40px;
+            margin-bottom: 29px;
+            h1 {
+                @include font(40px,
+                400,
+                55.76px);
+                font-family: serif;
+                margin: 0;
+            }
+        }
+        .description {
+            @include size(776px,
+            75px);
+            margin-bottom: 60px;
+            p {
+                @include font(18px,
+                400,
+                25.09px);
+            }
+        }
+    }
+    .additional-information {
+        position: absolute;
+        bottom: 0px;
+        height: 168px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        color: #fff;
+        font-size: 20px;
+        border-top: 1px solid #E5E5E5;
+        padding: 10px;
+        padding: 10px 80px;
+        display: flex;
+        align-items: center;
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            li+li {
+                margin-left: 97px;
+                a {
+                    text-align: center;
+                    @include font(20px,
+                    400,
+                    27.88px);
+                }
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+        &:first-child {
+            margin-right: 0px;
         }
     }
 }
@@ -117,4 +181,25 @@ body {
     border-bottom: 2px solid #FF9900;
     padding-bottom: 3px;
     color: #FF9900;
+}
+
+.call {
+    @include size(143px,
+    30px);
+    border: 2px solid #FF9900;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.order-call {
+    position: absolute;
+    top: 78px;
+    right: 94px;
+    color: #FF9900;
+}
+
+.leave-request {
+    background: #FF9900;
 }
