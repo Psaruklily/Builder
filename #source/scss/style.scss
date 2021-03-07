@@ -1,285 +1,326 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:after,
-*:before {
-    box-sizing: inherit;
-}
-
-@mixin size($width, $height) {
-    width: $width;
-    height: $height;
-}
-
-@mixin font($size, $weight, $line-height) {
-    font-size: $size;
-    font-weight: $weight;
-    line-height: $line-height;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-    background: #E5E5E5;
-}
-
-.main-container {
-    padding: 10px;
-    width: 1443px;
-}
-
-.first-page {
-    position: relative;
-    height: 1014px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%), url('../../images/electr.jpg');
-    background-size: cover;
-    header {
+    html {
+        box-sizing: border-box;
+    }
+    
+    *,
+    *:after,
+    *:before {
+        box-sizing: inherit;
+    }
+    
+    @mixin size($width, $height) {
+        width: $width;
+        height: $height;
+    }
+    
+    @mixin font($size, $weight, $line-height) {
+        font-size: $size;
+        font-weight: $weight;
+        line-height: $line-height;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+        background: #E5E5E5;
+    }
+    
+    .main-container {
+        padding: 10px;
+        width: 1443px;
+    }
+    
+    .first-page {
         position: relative;
-    }
-    header .wrapper-phone-icons {
-        display: flex;
-    }
-    .phone-numbers-header {
-        display: flex;
-        height: 54px;
-        background-color: hsla(0, 0%, 0%, .2);
-        div {
-            @include size(139px,
-            38px);
-            margin-right: 47px;
-            &:first-child {
-                margin-left: 818px;
-            }
+        height: 1014px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%), url('../../images/electr.jpg');
+        background-size: cover;
+        header {
+            position: relative;
         }
-        p {
-            color: #fff;
-            font-weight: 500;
-            font-size: 16px;
-            text-align: center;
-            font-family: 'Gilroy';
-        }
-    }
-    .icons-header {
-        ul {
-            list-style: none;
+        header .wrapper-phone-icons {
             display: flex;
-            padding: 0;
-            margin: 22px 131px 0px 20px;
         }
-        li {
-            margin-left: 20px;
-            &:hover {
-                cursor: pointer;
-            }
-        }
-    }
-    header .wrapper-logo-nav-button {
-        display: flex;
-        padding: 0px 80px;
-        .logo {
-            @include size(73px,
-            80px);
-            margin-right: 175px;
-            text-align: center;
-            span {
-                @include font(24px,
-                900,
-                80px);
-                color: #FF9900;
-            }
-        }
-        ul {
-            list-style: none;
+        .phone-numbers-header {
             display: flex;
-            margin: 0;
-            li {
-                display: block;
-                height: 80px;
-                margin-right: 20px;
-                padding: 27px 0px;
-                margin-right: 80px;
+            height: 54px;
+            background-color: hsla(0, 0%, 0%, .2);
+            div {
+                @include size(139px,
+                38px);
+                margin-right: 47px;
+                &:first-child {
+                    margin-left: 818px;
+                }
             }
-            & a {
-                text-align: center;
+            p {
                 color: #fff;
-                text-decoration: none;
-                font-size: 18px;
+                font-weight: 500;
+                font-size: 16px;
+                text-align: center;
+                font-family: 'Gilroy';
+            }
+        }
+        .icons-header {
+            ul {
+                list-style: none;
+                display: flex;
+                padding: 0;
+                margin: 22px 131px 0px 20px;
+            }
+            li {
+                margin-left: 20px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        header .wrapper-logo-nav-button {
+            display: flex;
+            padding: 0px 80px;
+            .logo {
+                @include size(73px,
+                80px);
+                margin-right: 175px;
+                text-align: center;
+                span {
+                    @include font(24px,
+                    900,
+                    80px);
+                    color: #FF9900;
+                }
+            }
+            ul {
+                list-style: none;
+                display: flex;
+                margin: 0;
+                li {
+                    display: block;
+                    height: 80px;
+                    margin-right: 20px;
+                    padding: 27px 0px;
+                    margin-right: 80px;
+                }
+                & a {
+                    text-align: center;
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 18px;
+                }
+            }
+        }
+        .descriptionAboutPage {
+            color: #fff;
+            position: absolute;
+            left: 335px;
+            top: 279px;
+            .title {
+                @include size(860px,
+                112px);
+                padding-right: 40px;
+                margin-bottom: 29px;
+                h1 {
+                    @include font(40px,
+                    400,
+                    55.76px);
+                    font-family: serif;
+                    margin: 0;
+                }
+            }
+            .description {
+                @include size(776px,
+                75px);
+                margin-bottom: 60px;
+                p {
+                    @include font(18px,
+                    400,
+                    25.09px);
+                }
+            }
+        }
+        .additional-information {
+            position: absolute;
+            bottom: 0px;
+            height: 168px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: #fff;
+            font-size: 20px;
+            border-top: 1px solid #E5E5E5;
+            padding: 10px;
+            padding: 10px 80px;
+            display: flex;
+            align-items: center;
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                li+li {
+                    margin-left: 97px;
+                    a {
+                        text-align: center;
+                        @include font(20px,
+                        400,
+                        27.88px);
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }
-    .descriptionAboutPage {
-        color: #fff;
+    
+    .active {
+        border-bottom: 2px solid #FF9900;
+        padding-bottom: 3px;
+        color: #FF9900;
+    }
+    
+    .call {
+        @include size(143px,
+        30px);
+        border: 2px solid #FF9900;
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 5px;
+    }
+    
+    .order-call {
         position: absolute;
-        left: 335px;
-        top: 279px;
-        .title {
-            @include size(860px,
-            112px);
-            padding-right: 40px;
-            margin-bottom: 29px;
-            h1 {
+        top: 78px;
+        right: 94px;
+        color: #FF9900;
+    }
+    
+    .leave-request {
+        background: #FF9900;
+    }
+    /*Styles for page with slider*/
+    
+    .page-with-slider {
+        width: 100%;
+        height: 919px;
+        background: rgb(255, 255, 255);
+        background-image: url('../../images/plan.png');
+        background-size: 692px 606px;
+        background-repeat: no-repeat;
+        background-position: top 410px left 310px;
+        position: relative;
+        .title-page-slider {
+            width: 307px;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            * {
+                margin: 0;
+                text-align: center
+            }
+             :first-child {
+                @include font(18px,
+                400,
+                25.09px);
+                color: #FF9900;
+                letter-spacing: 3px;
+            }
+             :last-child {
                 @include font(40px,
                 400,
                 55.76px);
-                font-family: serif;
-                margin: 0;
             }
         }
-        .description {
-            @include size(776px,
-            75px);
-            margin-bottom: 60px;
-            p {
-                @include font(18px,
-                400,
-                25.09px);
-            }
-        }
-    }
-    .additional-information {
-        position: absolute;
-        bottom: 0px;
-        height: 168px;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        color: #fff;
-        font-size: 20px;
-        border-top: 1px solid #E5E5E5;
-        padding: 10px;
-        padding: 10px 80px;
-        display: flex;
-        align-items: center;
-        ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
+        .flex-container {
+            position: absolute;
+            top: 235px;
             display: flex;
-            justify-content: space-between;
-            li+li {
-                margin-left: 97px;
-                a {
-                    text-align: center;
-                    @include font(20px,
+            width: 100%;
+            .project-name {
+                width: 50%;
+                padding-top: 166px;
+                padding-left: 168px;
+                 :nth-child(1) {
+                    @include font(24px,
+                    600,
+                    33.46px);
+                    margin: 0px 0px 16px;
+                }
+                 :nth-child(2) {
+                    width: 504px;
+                    height: 145px;
+                    margin: 0px;
+                    @include font(18px,
                     400,
-                    27.88px);
+                    25.09px);
                 }
-                &:hover {
-                    cursor: pointer;
-                    text-decoration: underline;
+                 :nth-child(3),
+                 :nth-child(4) {
+                    @include font(18px,
+                    700,
+                    25.09px);
+                    margin: 0px 0px 10px;
+                }
+            }
+            .room-demo {
+                background: rgb(118, 199, 132);
+                width: 50%;
+                height: 678px;
+                .slider {
+                    position: absolute;
+                    right: 0;
+                    width: 541px;
+                    height: 678px;
+                    overflow: hidden;
+                    .slider-line {
+                        width: 2164px;
+                        height: 590px;
+                        background: rgb(158, 84, 84);
+                        display: flex;
+                        position: relative;
+                        left: 0;
+                        transition: all ease 1s;
+                        img {
+                            width: auto;
+                            height: 590px;
+                            object-fit: cover;
+                        }
+                    }
+                    .slider-nav {
+                        height: 88px;
+                        width: 100%;
+                        background: #FFB800;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .icons-prev-next {
+                            color: #fff;
+                            font-weight: 400;
+                            font-size: 30px;
+                            text-align: center;
+                             :first-child,
+                             :last-child {
+                                margin: 20px;
+                            }
+                             :first-child:hover,
+                             :last-child:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
-}
-
-.active {
-    border-bottom: 2px solid #FF9900;
-    padding-bottom: 3px;
-    color: #FF9900;
-}
-
-.call {
-    @include size(143px,
-    30px);
-    border: 2px solid #FF9900;
-    text-align: center;
-    font-weight: 700;
-    font-size: 16px;
-    padding: 5px;
-}
-
-.order-call {
-    position: absolute;
-    top: 78px;
-    right: 94px;
-    color: #FF9900;
-}
-
-.leave-request {
-    background: #FF9900;
-}
-
-
-/*Styles for page with slider*/
-
-.page-with-slider {
-    width: 100%;
-    height: 919px;
-    background: rgb(255, 255, 255);
-    background-image: url('../../images/plan.png');
-    background-size: 692px 606px;
-    background-repeat: no-repeat;
-    background-position: top 250px left 310px;
-    position: relative;
-    .title-page-slider {
-        width: 307px;
-        background: rgb(139, 212, 167);
-        position: absolute;
-        top: 100px;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        * {
-            margin: 0;
-            text-align: center
-        }
-         :first-child {
-            @include font(18px,
-            400,
-            25.09px);
-            color: #FF9900;
-            letter-spacing: 3px;
-        }
-         :last-child {
-            @include font(40px,
-            400,
-            55.76px);
-        }
+    
+    #span-descp {
+        @include font(20px,
+        400,
+        27.88px);
     }
-    .flex-container {
-        position: absolute;
-        top: 235px;
-        display: flex;
-        width: 100%;
-        .project-name {
-            //background: rgb(116, 109, 148);
-            width: 50%;
-            padding-left: 168px;
-             :nth-child(1) {
-                @include font(24px,
-                600,
-                33.46px);
-                margin: 0px 0px 16px;
-            }
-             :nth-child(2) {
-                width: 504px;
-                height: 145px;
-                margin: 0px;
-                @include font(18px,
-                400,
-                25.09px);
-            }
-             :nth-child(3),
-             :nth-child(4) {
-                @include font(18px,
-                700,
-                25.09px);
-                margin: 0px 0px 10px;
-            }
-        }
-        .slider {
-            background: rgb(118, 199, 132);
-            width: 50%;
-        }
-    }
-}
-
-#span-descp {
-    @include font(20px,
-    400,
-    27.88px);
-}

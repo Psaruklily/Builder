@@ -198,12 +198,11 @@ body {
   background-image: url("../../images/plan.png");
   background-size: 692px 606px;
   background-repeat: no-repeat;
-  background-position: top 250px left 310px;
+  background-position: top 410px left 310px;
   position: relative;
 }
 .page-with-slider .title-page-slider {
   width: 307px;
-  background: #8bd4a7;
   position: absolute;
   top: 100px;
   left: 0;
@@ -235,6 +234,7 @@ body {
 }
 .page-with-slider .flex-container .project-name {
   width: 50%;
+  padding-top: 166px;
   padding-left: 168px;
 }
 .page-with-slider .flex-container .project-name :nth-child(1) {
@@ -258,9 +258,53 @@ body {
   line-height: 25.09px;
   margin: 0px 0px 10px;
 }
-.page-with-slider .flex-container .slider {
+.page-with-slider .flex-container .room-demo {
   background: #76c784;
   width: 50%;
+  height: 678px;
+}
+.page-with-slider .flex-container .room-demo .slider {
+  position: absolute;
+  right: 0;
+  width: 541px;
+  height: 678px;
+  overflow: hidden;
+}
+.page-with-slider .flex-container .room-demo .slider .slider-line {
+  width: 2164px;
+  height: 590px;
+  background: #9e5454;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+.page-with-slider .flex-container .room-demo .slider .slider-line img {
+  width: auto;
+  height: 590px;
+  object-fit: cover;
+}
+.page-with-slider .flex-container .room-demo .slider .slider-nav {
+  height: 88px;
+  width: 100%;
+  background: #FFB800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-with-slider .flex-container .room-demo .slider .slider-nav .icons-prev-next {
+  color: #fff;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+}
+.page-with-slider .flex-container .room-demo .slider .slider-nav .icons-prev-next :first-child,
+.page-with-slider .flex-container .room-demo .slider .slider-nav .icons-prev-next :last-child {
+  margin: 20px;
+}
+.page-with-slider .flex-container .room-demo .slider .slider-nav .icons-prev-next :first-child:hover,
+.page-with-slider .flex-container .room-demo .slider .slider-nav .icons-prev-next :last-child:hover {
+  cursor: pointer;
 }
 
 #span-descp {
