@@ -345,3 +345,9 @@ body {
 .hide {
   display: none;
 }
+
+.active-thumbnail {
+  border: 2px solid black;
+  opacity: 1 !important;
+  transition: opacity ease 0.5s;
+}
