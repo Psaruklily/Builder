@@ -15,6 +15,7 @@ body {
 }
 
 .main-container {
+  background: #fff;
   padding: 10px;
   width: 1443px;
 }
@@ -190,6 +191,74 @@ body {
   background: #FF9900;
 }
 
+/*Styles for page "who-we-are"*/
+.who-we-are-wrapper {
+  height: 943px;
+  width: 100%;
+  background-image: url(../../images/plan.png);
+  background-size: 692px 606px;
+  background-repeat: no-repeat;
+  background-position: bottom 0px right -50px;
+  position: relative;
+}
+.who-we-are-wrapper .about-us-wrapper {
+  display: flex;
+}
+.who-we-are-wrapper .about-us-wrapper .electruk-image {
+  width: 655px;
+  height: 778px;
+  display: flex;
+  position: relative;
+}
+.who-we-are-wrapper .about-us-wrapper .electruk-image img {
+  flex: none;
+  width: 655px;
+  height: 778px;
+}
+.who-we-are-wrapper .about-us-wrapper .electruk-image .expierence-number {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 238px;
+  height: 220px;
+  background: #FFB800;
+  color: #fff;
+}
+.who-we-are-wrapper .about-us-wrapper .electruk-image .expierence-number p {
+  margin: 0px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 41.82px;
+  padding: 20px;
+}
+.who-we-are-wrapper .about-us-wrapper .electruk-image .expierence-number p span {
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 97.58px;
+}
+.who-we-are-wrapper .about-us-wrapper .electruk-image .expierence-number p span:after {
+  content: "+";
+  position: relative;
+  left: 10px;
+  bottom: 15px;
+}
+.who-we-are-wrapper .about-us-wrapper .about-us {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.who-we-are-wrapper .about-us-wrapper .about-us .about-us-inner {
+  width: 542px;
+  height: 416px;
+}
+.who-we-are-wrapper .about-us-wrapper .about-us .about-us-inner p {
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
 /*Styles for page with slider*/
 .page-with-slider {
   width: 100%;
@@ -214,18 +283,6 @@ body {
   margin: 0;
   text-align: center;
 }
-.page-with-slider .title-page-slider :first-child {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 25.09px;
-  color: #FF9900;
-  letter-spacing: 3px;
-}
-.page-with-slider .title-page-slider :last-child {
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 55.76px;
-}
 .page-with-slider .flex-container {
   position: absolute;
   top: 235px;
@@ -242,14 +299,6 @@ body {
   font-weight: 600;
   line-height: 33.46px;
   margin: 0px 0px 16px;
-}
-.page-with-slider .flex-container .project-name :nth-child(2) {
-  width: 504px;
-  height: 145px;
-  margin: 0px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 25.09px;
 }
 .page-with-slider .flex-container .project-name :nth-child(3),
 .page-with-slider .flex-container .project-name :nth-child(4) {
@@ -350,4 +399,28 @@ body {
   border: 2px solid black;
   opacity: 1 !important;
   transition: opacity ease 0.5s;
+}
+
+.yellow-letter-spacing {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.09px;
+  color: #FF9900;
+  letter-spacing: 3px;
+}
+
+.caption {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 55.76px;
+}
+
+.small-paragraph {
+  margin: 0px;
+  text-align: left;
+  width: 504px;
+  height: 145px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.09px;
 }
