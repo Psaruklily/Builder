@@ -78,18 +78,6 @@ body {
     header .wrapper-logo-nav-button {
         display: flex;
         padding: 0px 80px;
-        .logo {
-            @include size(73px,
-            80px);
-            margin-right: 175px;
-            text-align: center;
-            span {
-                @include font(24px,
-                900,
-                80px);
-                color: #FF9900;
-            }
-        }
         ul {
             list-style: none;
             display: flex;
@@ -200,6 +188,19 @@ body {
 
 .leave-request {
     background: #FF9900;
+}
+
+.logo {
+    @include size(73px,
+    80px);
+    margin-right: 175px;
+    text-align: center;
+    span {
+        @include font(24px,
+        900,
+        80px);
+        color: #FF9900;
+    }
 }
 
 
@@ -433,6 +434,69 @@ body {
             }
         }
     }
+}
+
+
+/*Styles for footer*/
+
+.footer-wrapper {
+    position: relative;
+    @include size(100%,
+    403px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    .block-for-align {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include size(1115px,
+        200px);
+        a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            @include font(16px,
+            300,
+            24.51px);
+            &:hover {
+                text-decoration: underline;
+                color: #FFB800;
+            }
+        }
+        .icons * {
+            margin-top: 6px;
+        }
+    }
+    hr {
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+        border: 1px solid #fff;
+    }
+    .copywriter {
+        position: absolute;
+        bottom: 0px;
+        left: 168px;
+        color: #fff;
+        >p {
+            margin: 0px 0px 7px;
+        }
+    }
+}
+
+.paragr {
+    @include size(308px,
+    75px);
+}
+
+.pos {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 #span-descp {
